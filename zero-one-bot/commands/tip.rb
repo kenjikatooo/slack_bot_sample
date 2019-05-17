@@ -23,11 +23,11 @@ module ZeroOneBot
 
           ---------------------------------
           <@#{donor.usercode}>
-          メモ回数：#{donor.memo_count}回
-          アウトプット回数：#{donor.output_count}回
-          アドバイス回数：#{donor.advice_count}回
-          投げ銭回数：#{donor.tip_count}回
-          残01coin：#{donor.coin}coin
+          📝メモ回数：#{donor.memo_count}回
+          🎨アウトプット回数：#{donor.output_count}回
+          💓アドバイス回数：#{donor.advice_count}回
+          👏投げ銭回数：#{donor.tip_count}回
+          💰残りコイン：#{donor.coin}coin
           ---------------------------------
         TEXT
       end
