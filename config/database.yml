@@ -1,0 +1,21 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password:
+  socket: /tmp/mysql.sock
+
+development:
+  <<: *default
+  database: zero_one_bot_development
+
+test:
+  <<: *default
+  database: zero_one_bot_test
+
+production:
+  <<: *default
+  database: heroku_26a1e5801d59a48
+  username: b6d37c26bc517f
+  password: <%= ENV['DATABASE_PASSWORD'] %>

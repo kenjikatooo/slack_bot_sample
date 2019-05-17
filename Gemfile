@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'celluloid-io', '~> 0.17'
+gem 'dotenv', '~> 2.2'
+gem 'mysql2', '~> 0.4', '< 0.5'
+gem 'puma', '~> 3.11'
+gem 'rake', '~> 12.3'
+gem 'sinatra', '~> 2.0'
+gem 'sinatra-activerecord', '~> 2.0'
+gem 'slack-ruby-bot', '~> 0.10'

@@ -1,0 +1,7 @@
+require 'sinatra/activerecord'
+require 'slack-ruby-bot'
+require 'zero-one-bot/models/user'
+require 'zero-one-bot/models/user/tip'
+require 'zero-one-bot/bot'
+require 'zero-one-bot/commands'
+require 'zero-one-bot/error'
