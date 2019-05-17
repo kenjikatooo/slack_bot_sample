@@ -20,4 +20,4 @@ production:
   # username: b6d37c26bc517f
   # password: <%= ENV['DATABASE_PASSWORD'] %>
   encoding: utf8mb4
-  url: <%= ENV['JAWSDB_URL'] %>
+  url: <%= ENV['DATABASE_URL'] %>
