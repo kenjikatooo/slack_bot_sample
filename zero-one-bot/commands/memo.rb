@@ -1,6 +1,11 @@
+require 'lib/client_manager'
+
 module ZeroOneBot
   module Commands
     class Memo < ZeroOneBot::Commands::Base
+
+      extend ClientManager
+
       MEMO_REWARD = 10.freeze
 
       match /^【メモ】/ do |client, data, match|
@@ -12,11 +17,7 @@ module ZeroOneBot
           thread_ts: data.thread_ts || data.ts
         )
         # スタンプを押す
-        client.web_client.reactions_add(
-          name: :tada,
-          channel: data.channel,
-          timestamp: data.ts,
-          as_user: true)
+        self.add_reaction(client, data, :mutta_1)
       end
 
       private
