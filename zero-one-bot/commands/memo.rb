@@ -11,6 +11,12 @@ module ZeroOneBot
           channel: data.channel,
           thread_ts: data.thread_ts || data.ts
         )
+        # スタンプを押す
+        client.web_client.reactions_add(
+          name: :tada,
+          channel: data.channel,
+          timestamp: data.ts,
+          as_user: true)
       end
 
       private
